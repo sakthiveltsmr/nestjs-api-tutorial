@@ -1,0 +1,900 @@
+{
+    "abandoned_items_summary": {
+        "type": "nested",
+        "properties": {
+            "cart_items": {
+                "type": "nested",
+                "properties": {
+                    "product_id": {
+                        "type": "keyword"
+                    },
+                    "product_name": {
+                        "type": "text"
+                    },
+                    "quantity": {
+                        "type": "long"
+                    }
+                }
+            },
+            "cart_uuid": {
+                "type": "keyword"
+            }
+        }
+    },
+    "accepts_marketing": {
+        "type": "keyword"
+    },
+    "accepts_marketing_updated_at": {
+        "type": "date",
+        "format": "date_optional_time"
+    },
+    "app_customer_uuid": {
+        "type": "text",
+        "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+            }
+        }
+    },
+    "app_id": {
+        "type": "keyword"
+    },
+    "automation_message_history": {
+        "type": "nested",
+        "properties": {
+            "app_id": {
+                "type": "keyword"
+            },
+            "app_message_uuid": {
+                "type": "keyword"
+            },
+            "automation": {
+                "properties": {
+                    "action_uuid": {
+                        "type": "keyword"
+                    },
+                    "automation_flow_uuid": {
+                        "type": "keyword"
+                    },
+                    "cart_id": {
+                        "type": "long"
+                    },
+                    "customer_id": {
+                        "type": "long"
+                    }
+                }
+            },
+            "clicked_at": {
+                "type": "date",
+                "format": "epoch_second"
+            },
+            "created_at": {
+                "type": "date",
+                "format": "epoch_second"
+            },
+            "delivered_at": {
+                "type": "date",
+                "format": "epoch_second"
+            },
+            "failed_at": {
+                "type": "date",
+                "format": "epoch_second"
+            },
+            "message_type": {
+                "type": "keyword"
+            },
+            "message_uuid": {
+                "type": "keyword"
+            },
+            "opened_at": {
+                "type": "date",
+                "format": "epoch_second"
+            },
+            "shop_id": {
+                "type": "long"
+            },
+            "status": {
+                "type": "keyword"
+            },
+            "unsubscribed_at": {
+                "type": "date",
+                "format": "epoch_second"
+            },
+            "updated_at": {
+                "type": "date",
+                "format": "epoch_second"
+            }
+        }
+    },
+    "broadcast_message_history": {
+        "type": "nested",
+        "properties": {
+            "app_id": {
+                "type": "keyword"
+            },
+            "app_message_uuid": {
+                "type": "keyword"
+            },
+            "broadcast": {
+                "properties": {
+                    "broadcast_uuid": {
+                        "type": "keyword"
+                    },
+                    "customer_id": {
+                        "type": "long"
+                    }
+                }
+            },
+            "clicked_at": {
+                "type": "date",
+                "format": "epoch_second"
+            },
+            "created_at": {
+                "type": "date",
+                "format": "epoch_second"
+            },
+            "delivered_at": {
+                "type": "date",
+                "format": "epoch_second"
+            },
+            "failed_at": {
+                "type": "date",
+                "format": "epoch_second"
+            },
+            "message_type": {
+                "type": "keyword"
+            },
+            "message_uuid": {
+                "type": "keyword"
+            },
+            "opened_at": {
+                "type": "date",
+                "format": "epoch_second"
+            },
+            "shop_id": {
+                "type": "long"
+            },
+            "status": {
+                "type": "keyword"
+            },
+            "unsubscribed_at": {
+                "type": "date",
+                "format": "epoch_second"
+            },
+            "updated_at": {
+                "type": "date",
+                "format": "epoch_second"
+            }
+        }
+    },
+    "carts": {
+        "type": "nested",
+        "properties": {
+            "abandoned_at": {
+                "type": "date",
+                "format": "date_optional_time"
+            },
+            "abandoned_checkout_url": {
+                "type": "object",
+                "enabled": false
+            },
+            "app_cart_uuid": {
+                "type": "text",
+                "fields": {
+                    "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                    }
+                }
+            },
+            "app_id": {
+                "type": "keyword"
+            },
+            "billing_address": {
+                "type": "nested",
+                "properties": {
+                    "address1": {
+                        "type": "text"
+                    },
+                    "address2": {
+                        "type": "text"
+                    },
+                    "city": {
+                        "type": "keyword"
+                    },
+                    "company": {
+                        "type": "keyword"
+                    },
+                    "country": {
+                        "type": "keyword"
+                    },
+                    "country_code": {
+                        "type": "keyword"
+                    },
+                    "first_name": {
+                        "type": "keyword"
+                    },
+                    "last_name": {
+                        "type": "keyword"
+                    },
+                    "latitude": {
+                        "type": "keyword"
+                    },
+                    "longitude": {
+                        "type": "keyword"
+                    },
+                    "name": {
+                        "type": "keyword"
+                    },
+                    "phone": {
+                        "type": "keyword"
+                    },
+                    "province": {
+                        "type": "keyword"
+                    },
+                    "province_code": {
+                        "type": "keyword"
+                    },
+                    "zip": {
+                        "type": "keyword"
+                    }
+                }
+            },
+            "browser": {
+                "type": "nested"
+            },
+            "browser_details": {
+                "properties": {
+                    "device": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "name": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "version": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    }
+                }
+            },
+            "buyer_accepts_marketing": {
+                "type": "boolean"
+            },
+            "cart_hash": {
+                "type": "object",
+                "enabled": false
+            },
+            "cart_ingestion_count": {
+                "type": "object",
+                "enabled": false
+            },
+            "cart_token": {
+                "type": "keyword"
+            },
+            "cart_type": {
+                "type": "keyword"
+            },
+            "cart_uuid": {
+                "type": "keyword"
+            },
+            "checkout_token": {
+                "type": "keyword"
+            },
+            "closed_at": {
+                "type": "date",
+                "format": "date_optional_time"
+            },
+            "completed_at": {
+                "type": "date",
+                "format": "date_optional_time"
+            },
+            "conversion_notified": {
+                "type": "boolean"
+            },
+            "country_code": {
+                "type": "keyword"
+            },
+            "created_at": {
+                "type": "date",
+                "format": "date_optional_time"
+            },
+            "customer": {
+                "type": "nested",
+                "properties": {
+                    "accepts_marketing": {
+                        "type": "boolean"
+                    },
+                    "created_at": {
+                        "type": "date",
+                        "format": "date_optional_time"
+                    },
+                    "currency": {
+                        "type": "keyword"
+                    },
+                    "email": {
+                        "type": "keyword"
+                    },
+                    "first_name": {
+                        "type": "keyword"
+                    },
+                    "id": {
+                        "type": "keyword"
+                    },
+                    "last_name": {
+                        "type": "keyword"
+                    },
+                    "last_order_id": {
+                        "type": "keyword"
+                    },
+                    "last_order_name": {
+                        "type": "keyword"
+                    },
+                    "orders_count": {
+                        "type": "long"
+                    },
+                    "phone": {
+                        "type": "keyword"
+                    },
+                    "state": {
+                        "type": "keyword"
+                    },
+                    "total_spent": {
+                        "type": "keyword"
+                    },
+                    "updated_at": {
+                        "type": "date",
+                        "format": "date_optional_time"
+                    },
+                    "verified_email": {
+                        "type": "boolean"
+                    }
+                }
+            },
+            "customer_email": {
+                "type": "keyword"
+            },
+            "customer_id": {
+                "type": "long"
+            },
+            "deleted_at": {
+                "type": "date",
+                "format": "date_optional_time"
+            },
+            "discount_codes": {
+                "type": "nested"
+            },
+            "id": {
+                "type": "text",
+                "fields": {
+                    "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                    }
+                }
+            },
+            "ip": {
+                "type": "keyword"
+            },
+            "is_converted": {
+                "type": "date",
+                "format": "date_optional_time"
+            },
+            "is_duplicate_of": {
+                "type": "long"
+            },
+            "language": {
+                "type": "keyword"
+            },
+            "line_items": {
+                "type": "nested",
+                "properties": {
+                    "image_url": {
+                        "type": "object",
+                        "enabled": false
+                    },
+                    "key": {
+                        "type": "keyword"
+                    },
+                    "line_price": {
+                        "type": "long"
+                    },
+                    "price": {
+                        "type": "long"
+                    },
+                    "product_id": {
+                        "type": "long"
+                    },
+                    "product_url": {
+                        "type": "object",
+                        "enabled": false
+                    },
+                    "quantity": {
+                        "type": "long"
+                    },
+                    "sku": {
+                        "type": "keyword"
+                    },
+                    "tax_lines": {
+                        "type": "nested",
+                        "properties": {
+                            "compare_at": {
+                                "type": "long"
+                            },
+                            "position": {
+                                "type": "long"
+                            },
+                            "price": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "rate": {
+                                "type": "long"
+                            },
+                            "source": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "title": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            },
+                            "zone": {
+                                "type": "text",
+                                "fields": {
+                                    "keyword": {
+                                        "type": "keyword",
+                                        "ignore_above": 256
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "taxable": {
+                        "type": "boolean"
+                    },
+                    "title": {
+                        "type": "keyword"
+                    },
+                    "user_id": {
+                        "type": "keyword"
+                    },
+                    "variant_id": {
+                        "type": "long"
+                    },
+                    "variant_price": {
+                        "type": "long"
+                    },
+                    "variant_title": {
+                        "type": "keyword"
+                    },
+                    "vendor": {
+                        "type": "keyword"
+                    }
+                }
+            },
+            "line_items_count": {
+                "type": "long"
+            },
+            "metadata": {
+                "type": "nested"
+            },
+            "noc_discount_codes": {
+                "type": "nested"
+            },
+            "order_status": {
+                "type": "keyword"
+            },
+            "phone_number": {
+                "type": "keyword"
+            },
+            "presentment_currency_code": {
+                "type": "keyword"
+            },
+            "primary_id": {
+                "type": "long"
+            },
+            "province_code": {
+                "type": "keyword"
+            },
+            "r_checkout_id": {
+                "type": "keyword"
+            },
+            "r_order_id": {
+                "type": "keyword"
+            },
+            "recovered_at": {
+                "type": "date",
+                "format": "date_optional_time"
+            },
+            "recovered_by_retainful": {
+                "type": "boolean"
+            },
+            "recovered_cart_token": {
+                "type": "keyword"
+            },
+            "shipping_address": {
+                "type": "nested",
+                "properties": {
+                    "address1": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "address2": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "city": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "country": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "country_code": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "first_name": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "image_url": {
+                        "type": "object",
+                        "enabled": false
+                    },
+                    "key": {
+                        "type": "keyword"
+                    },
+                    "last_name": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "latitude": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "line_price": {
+                        "type": "long"
+                    },
+                    "longitude": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "name": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "price": {
+                        "type": "long"
+                    },
+                    "product_id": {
+                        "type": "long"
+                    },
+                    "product_url": {
+                        "type": "object",
+                        "enabled": false
+                    },
+                    "province": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "province_code": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    },
+                    "quantity": {
+                        "type": "long"
+                    },
+                    "sku": {
+                        "type": "keyword"
+                    },
+                    "tax_lines": {
+                        "type": "nested"
+                    },
+                    "taxable": {
+                        "type": "boolean"
+                    },
+                    "title": {
+                        "type": "keyword"
+                    },
+                    "user_id": {
+                        "type": "keyword"
+                    },
+                    "variant_id": {
+                        "type": "long"
+                    },
+                    "variant_price": {
+                        "type": "long"
+                    },
+                    "variant_title": {
+                        "type": "keyword"
+                    },
+                    "vendor": {
+                        "type": "keyword"
+                    },
+                    "zip": {
+                        "type": "text",
+                        "fields": {
+                            "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                            }
+                        }
+                    }
+                }
+            },
+            "shop_cart_id": {
+                "type": "keyword"
+            },
+            "shop_currency_code": {
+                "type": "keyword"
+            },
+            "shop_currency_total_amount": {
+                "type": "double"
+            },
+            "shop_id": {
+                "type": "long"
+            },
+            "source_platform": {
+                "type": "keyword"
+            },
+            "total_amount": {
+                "type": "double"
+            },
+            "treat_on_hold_as_complete": {
+                "type": "object",
+                "enabled": false
+            },
+            "updated_at": {
+                "type": "date",
+                "format": "date_optional_time"
+            },
+            "user_id": {
+                "type": "long"
+            }
+        }
+    },
+    "country_code": {
+        "type": "keyword"
+    },
+    "created_at": {
+        "type": "date",
+        "format": "date_optional_time"
+    },
+    "currency_code": {
+        "type": "keyword"
+    },
+    "email": {
+        "type": "keyword"
+    },
+    "first_name": {
+        "type": "keyword"
+    },
+    "first_order_status": {
+        "type": "boolean"
+    },
+    "is_deleted": {
+        "type": "boolean"
+    },
+    "is_mailing_allowed": {
+        "type": "boolean"
+    },
+    "last_name": {
+        "type": "keyword"
+    },
+    "last_order_id": {
+        "type": "keyword"
+    },
+    "last_order_name": {
+        "type": "keyword"
+    },
+    "order_items_summary": {
+        "type": "nested",
+        "properties": {
+            "cart_items": {
+                "type": "nested",
+                "properties": {
+                    "product_id": {
+                        "type": "keyword"
+                    },
+                    "product_name": {
+                        "type": "text"
+                    },
+                    "quantity": {
+                        "type": "long"
+                    }
+                }
+            },
+            "cart_uuid": {
+                "type": "keyword"
+            }
+        }
+    },
+    "orders_count": {
+        "type": "long"
+    },
+    "phone_number": {
+        "type": "keyword"
+    },
+    "points": {
+        "type": "long"
+    },
+    "primary_id": {
+        "type": "long"
+    },
+    "province_code": {
+        "type": "keyword"
+    },
+    "referral_code": {
+        "type": "keyword"
+    },
+    "referral_count": {
+        "type": "long"
+    },
+    "remote_customer_state": {
+        "type": "keyword"
+    },
+    "sent_post_referral_mail": {
+        "type": "boolean"
+    },
+    "shop_customer_id": {
+        "type": "keyword"
+    },
+    "shop_id": {
+        "type": "long"
+    },
+    "tax_exempt": {
+        "type": "boolean"
+    },
+    "total_abandoned_items": {
+        "type": "nested",
+        "properties": {
+            "product_id": {
+                "type": "keyword"
+            },
+            "product_name": {
+                "type": "text"
+            },
+            "quantity": {
+                "type": "long"
+            }
+        }
+    },
+    "total_completed_order_count": {
+        "type": "long"
+    },
+    "total_order_items": {
+        "type": "nested",
+        "properties": {
+            "product_id": {
+                "type": "keyword"
+            },
+            "product_name": {
+                "type": "text"
+            },
+            "quantity": {
+                "type": "long"
+            }
+        }
+    },
+    "total_spent": {
+        "type": "long"
+    },
+    "type": {
+        "type": "keyword"
+    },
+    "unsubscribed_at": {
+        "type": "date",
+        "format": "date_optional_time"
+    },
+    "updated_at": {
+        "type": "date",
+        "format": "date_optional_time"
+    },
+    "user_id": {
+        "type": "long"
+    },
+    "user_type": {
+        "type": "keyword"
+    },
+    "uuid": {
+        "type": "keyword"
+    },
+    "verified_email": {
+        "type": "boolean"
+    }
+}

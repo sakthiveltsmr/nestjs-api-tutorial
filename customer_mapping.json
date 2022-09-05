@@ -1,0 +1,302 @@
+{
+    "abandoned_items_summary":
+   [
+        {
+            "cart_items":[
+            {
+                "product_id":"dsfjhdjshfjkdhs123sxdx",
+                "product_name":"moblie",
+                "quantity":2   
+            }
+            ],
+            "cart_uuid":"fjbggergbdfgjknfdjkgberhrw"
+       }
+        
+    ],
+    "accepting_marketing":"accept",
+
+    "accepts_marketing_updated_at":null,
+    
+    "app_customer_uuid":"8cf3245fce1b",
+    "app_id":"4585241552454532878",
+    "automation_message_history":[{
+        "app_id":"4585241552454532878",
+        "app_message_uuid":"xBJCBhgbhcbbjhvsuyncsbcsbv",
+        "automation":{
+            "action_uuid":"cjvndfvnfvsnklsdfmiopo",
+            "automation_flow_uuid":"dnmjnjnjknjnjdfafndhkbannadd",
+            "cart_id":2,
+            "customer_id":4
+        },
+        "clicked_at":null,
+        "created_at":1660110656,
+        "delivered_at":null,
+        "failed_at":1660110656,
+        "message_type":"automation",
+        "message_uuid":"message_id_b515-4715",
+        "opened_at":null,
+        "shop_id":1610,
+        "status":"opened",
+        "unsubscribed_at":null,
+        "updated_at":1660110656
+
+     }
+    ],
+    "broadcast_message_history" : [
+        {
+          "app_id" : "ffbbec42-b515-471f-8aaa-8cf3245fce1b",
+          "app_message_uuid" : "ffbbec42-b515-471f-8aaa-8cf3245fce1b.message_id_b515-471f",
+          "broadcast" : {
+            "broadcast_uuid" : "YEeSIZzlOcnerTf4uMpPKbLTnyf6suRuLx9m",
+            "customer_id" : 6127955771582
+          },
+          "clicked_at" : null,
+          "created_at" : 1660110656,
+          "delivered_at" : null,
+          "failed_at" : 1660110656,
+          "message_type" : "broadcast",
+          "message_uuid" : "message_id_b515-471f",
+          "opened_at" : null,
+          "shop_id" : 1610,
+          "status" : "opened",
+          "unsubscribed_at" : null,
+          "updated_at" : 1660110656
+        }],
+    "carts":[
+        {
+          "abandoned_at":  null,
+          "abandoned_checkout_url":{
+            "enabled":false
+          },
+          "app_cart_uuid":"8cf3245fce1b",
+          "app_id":"ffbbec42-b515-471f-8aaa-8cf3245fce1b",
+
+          "billing_address":
+          [
+            {
+                "address1":"52,kaliyamman kovil street",
+                "address2":"Ariyagoundampatti",
+                "city":"Namagiripet",
+                "company":null,
+                "country":"India",
+                "country_code":"+91",
+                "first_name":"sakthi",
+                "last_name":"vel",
+                "latitude":27.2046,
+                "longitude":77.4977,
+                "name":"sakthivel",
+                "phone":8599248879,
+                "province":"TamilNadu",
+                "province_code":"TamilNadu",
+                "zip":637406
+
+            }
+          ],
+        "browser":[],
+        "browser_details":{
+                "device":"Dell",
+                "name":"chrome",
+               "version":"2.10"
+            },
+        "buyer_accepts_marketing":true,
+        "cart_hash":{
+            "enabled":false
+        },
+        "cart_ingestion_count":{
+            "enabled":false
+        },
+        "cart_token":"vjnfjdvbdfknbjkndfnbdf",
+        "cart_type":"MASTER",
+        "cart_uuid":254,
+        "completed_at":1660110656,
+        "customer":[
+            {
+                "accepts_marketing":true,
+                "created_at":1660110656,
+                "currency":200,
+                "email":"sakthiveltsmr@gmail.com",
+                "first_name":"sakthi",
+                "id":2,
+                "last_name":"vel",
+                "last_order_id":5545,
+                "last_order_name":"mask",
+                "orders_count":50,
+                "phone":8599248879,
+                "state":"TamilNadu",
+                "total_spent":null,
+                "updated_at":null,
+                "verified_email":true
+
+            }
+        ],
+        "customer_email":"sakthiveltsmr@gmail.com",
+        "customer_id":2,
+        "deleted_at":null,
+        "discount_codes":[null],
+        "id":"sdsdedsdsfsfsd",
+        "ip":null,
+        "is_converted":null,
+        "is_duplicate_of":2,
+        "language":"English",
+        "line_items":[
+            {
+                "image_url":{
+                    "enabled":false
+                },
+                "key":2,
+                "line_price":545,
+                "price":584,
+                "product_id":"dsfjhdjshfjkdhs123sxdx",
+                "product_url":{
+                    "enabled":false
+                },
+                "quantity":2,
+                "sku":null,
+                "tax_lines":[
+                    {
+                        "compare_at":null,
+                        "position":5,
+                        "price":584,
+                        "rate":4.45,
+                        "source":"shopify",
+                        "title":"mask",
+                        "zone":"India"
+                    }
+                ] ,
+                "taxable":false,
+                "title":"mask",
+                "user_id":2,
+                "variant_id":null,
+                "variant_price":null,
+                "variant_title":null,
+                "vendor":null
+            }
+        ],
+        "line_items_count":true,
+        "metadata":[],
+        "noc_discount_codes":[],
+        "order_status":"success",
+        "phone_number":44526552,
+        "presentment_currency_code":8758452,
+        "primary_id":545,
+        "province_code":"TamilNadu",
+        "r_checkout_id":2,
+        "r_order_id":368,
+        "recovered_at":null,
+        "recovered_by_retainful":false,
+        "recovered_cart_token":"fgcvghvvvyghvgvgvgv",
+        "shipping_address":[
+            {
+                "address1":"52,kaliyamman kovil street",
+                "address2":"Ariyagoundampatti",
+                "city":"Namagiripet",
+                "country":"India",
+                "country_code":"+91",
+                "first_name":"sakthi",
+                "image_url":{
+                    "enabled":false
+                },
+                "key":2,
+                "last_name":"vel",
+                "latitude":27.2046,
+                "line_price":545,
+                "longitude":77.4977,
+                "name":"chrome",
+                "price":584,
+                "product_id":"dsfjhdjshfjkdhs123sxdx",
+                "product_url":{
+                    "enabled":false
+                },
+                "province":"TamilNadu",
+                "province_code":"TamilNadu",
+                "quantity":2,
+                "sku":null,
+                "tax_lines":[],
+                "taxable":false,
+                "title":"mask",
+                "user_id":2,
+                "variant_id":null,
+                "variant_price":null,
+                "variant_title":null,
+                "vendor":null,
+                "zip":637406
+
+
+            }
+        ],
+        "shop_cart_id":22,
+        "shop_currency_code":[],
+        "shop_currency_total_amount":500.0,
+        "shop_id":1610,
+        "source_platform":"shopify",
+        "total_amount":504,
+        "treat_on_hold_as_complete":{
+            "enabled":false
+        },
+        "updated_at":1660110656,
+        "user_id":2
+        }
+    ],
+    "country_code":"+91",
+    "created_at":1660110656,
+    "currency_code":"Rupees",
+    "email":"sakthiveltsmr@gmail.com",
+    "first_name":"sakthi",
+    "first_order_status":true,
+    "is_deleted":false,
+    "is_mailing_allowed":true,
+    "last_name":"vel",
+    "last_order_id":5545,
+    "last_order_name":"mask",
+    "order_items_summary":[
+        {
+            "cart_items":[
+                {
+                    "product_id":"dsfjhdjshfjkdhs123sxdx",
+                    "product_name":"moblie",
+                    "quantity":2
+                    
+                }
+                ],
+                "cart_uuid":"fjbggergbdfgjknfdjkgberhrw"
+        }
+    ],
+    "orders_count":50,
+    "phone_number":44526552,
+    "points":88,
+    "primary_id":545,
+    "province_code":"TamilNadu",
+    "refferral_code":null,
+    "refferral_count":0,
+    "remote_customer_state":"TamilNadu",
+    "sent_post_refferral_mail":"refferral@gmail.com",
+    "shop_customer_id":471,
+    "shop_id":1610,
+    "tax_exempt":false,
+    "total_abandoned_items":[
+       {
+        "product_id":"dsfjhdjshfjkdhs123sxdx",
+        "product_name":"moblie",
+        "quantity":2
+       }
+        
+    ] ,
+    "total_completed_order_count":0,
+    "total_order_items":[
+        {
+            "product_id":"dsfjhdjjjshfjkdhs123sxdx",
+            "product_name":"mask",
+            "quantity":2
+        }
+    ],
+    "total_spent":null,
+    "type":null,
+    "unsubscribed_at":null,
+    "updated_at":1660110656,
+    "user_id":2,
+    "user_type":"member",
+    "uuid":"8cf3245fce1b",
+    "verified_email":true
+
+
+}
