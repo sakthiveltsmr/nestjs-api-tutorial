@@ -13,12 +13,23 @@ export class AuthService {
         const hash=await argon.hash(dto.password);
 
         //store the user details from database
-
+        const result=await this.prisma.user.findUnique({where:{email:dto.email}})
+        if(result){
+         throw console.error("user already exists");
+         
+        }
         const user=await this.prisma.user.create({
             data:{ 
+        
               email: dto.email,
               hash,
             },
+            select:{
+                id:true,
+                firstName:true,
+                lastName:true,
+                email:true
+            }
         });
 
 
